@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>1PS Marketing — Meta & Google Ads That Actually Perform</title>
+<meta name="description" content="Performance-first social media marketing agency. Meta & Google Ads built for service businesses and ecommerce brands that need qualified leads, not vanity metrics." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="1PS Marketing — Meta & Google Ads That Actually Perform" />
+<meta property="og:description" content="Turn scrolling into sales with Meta & Google Ads built for service businesses and ecommerce brands. 20–40% lower cost-per-lead in 90 days." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://1psmarketing.ca" />
+<meta property="og:site_name" content="1PS Marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="1PS Marketing — Meta & Google Ads That Actually Perform" />
+<meta name="twitter:description" content="Turn scrolling into sales with Meta & Google Ads built for service businesses and ecommerce brands." />
+
+<!-- Favicon: inline SVG -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A0A'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Inter,sans-serif' font-size='28' font-weight='700' fill='%23A3E635'%3E1%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --bg-elev: #111111;
+    --bg-elev-2: #161616;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.14);
+    --text: #F5F5F4;
+    --text-dim: #A1A1AA;
+    --text-faint: #71717A;
+    --accent: #A3E635;        /* electric lime */
+    --accent-soft: rgba(163,230,53,0.12);
+    --accent-glow: rgba(163,230,53,0.35);
+    --radius: 14px;
+    --radius-sm: 10px;
+    --max: 1140px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  /* Background ambient glow */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(163,230,53,0.10) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(40px);
+  }
+  /* Grain */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 28px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10,10,10,0.72);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent) 0%, #65A30D 100%);
+    display: grid;
+    place-items: center;
+    color: #0A0A0A;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 0 20px rgba(163,230,53,0.25);
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+  .nav-links a {
+    transition: color .2s ease;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #0A0A0A;
+    font-weight: 600;
+  }
+  .btn-primary:hover {
+    background: #BEF264;
+    box-shadow: 0 0 30px rgba(163,230,53,0.35);
+    transform: translateY(-1px);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border-strong);
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.25); }
+  .btn-lg { padding: 14px 24px; font-size: 15px; }
+  .btn-arrow { transition: transform .2s ease; }
+  .btn:hover .btn-arrow { transform: translateX(3px); }
+
+  @media (max-width: 720px) {
+    .nav-links a:not(.btn) { display: none; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 120px 0 100px;
+    position: relative;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(163,230,53,0.2);
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+  }
+  .eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 7.2vw, 86px);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+    max-width: 980px;
+  }
+  .hero h1 .accent {
+    background: linear-gradient(180deg, var(--accent) 0%, #65A30D 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .hero p.lead {
+    font-size: clamp(16px, 1.6vw, 19px);
+    color: var(--text-dim);
+    max-width: 620px;
+    line-height: 1.65;
+    margin-bottom: 40px;
+  }
+  .hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .hero-meta {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--text-faint);
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .hero-meta .sep {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--text-faint);
+  }
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust {
+    padding: 60px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, transparent 0%, rgba(163,230,53,0.02) 100%);
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+  }
+  .trust-stat {
+    text-align: left;
+  }
+  .trust-stat .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 56px);
+    letter-spacing: -0.03em;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .trust-stat .num .accent { color: var(--accent); }
+  .trust-stat .label {
+    font-size: 13px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+  }
+  @media (max-width: 720px) {
+    .trust-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 120px 0; position: relative; }
+  .section-head {
+    margin-bottom: 60px;
+    max-width: 720px;
+  }
+  .section-label {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .section-head h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(32px, 4.5vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+  }
+  .section-head p {
+    color: var(--text-dim);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+  }
+  .service {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    transition: all .25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .service:hover {
+    border-color: var(--border-strong);
+    background: var(--bg-elev-2);
+    transform: translateY(-2px);
+  }
+  .service.span-3 { grid-column: span 3; }
+  .service.span-2 { grid-column: span 2; }
+  .service.span-4 { grid-column: span 4; }
+  .service.span-6 { grid-column: span 6; }
+
+  .service-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    display: grid;
+    place-items: center;
+    margin-bottom: 22px;
+    color: var(--accent);
+  }
+  .service h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin-bottom: 10px;
+  }
+  .service p {
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .service-tags {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  @media (max-width: 900px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .service.span-3, .service.span-2, .service.span-4, .service.span-6 { grid-column: span 1; }
+  }
+
+  /* ---------- PROCESS ---------- */
+  .process {
+    background: var(--bg-elev);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .process-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 32px;
+    padding: 36px;
+    border-bottom: 1px solid var(--border);
+    transition: background .2s ease;
+    align-items: start;
+  }
+  .step:last-child { border-bottom: none; }
+  .step:hover { background: rgba(163,230,53,0.025); }
+  .step-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    padding-top: 4px;
+  }
+  .step-body h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin-bottom: 10px;
+  }
+  .step-body p {
+    color: var(--text-dim);
+    font-size: 15.5px;
+    line-height: 1.65;
+    max-width: 680px;
+  }
+  @media (max-width: 720px) {
+    .step { grid-template-columns: 1fr; gap: 12px; padding: 28px 24px; }
+  }
+
+  /* ---------- WHY 1PS ---------- */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+  }
+  .why-hero-card {
+    background: linear-gradient(160deg, rgba(163,230,53,0.10) 0%, rgba(163,230,53,0.02) 100%);
+    border: 1px solid rgba(163,230,53,0.18);
+    border-radius: var(--radius);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .why-hero-card::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(163,230,53,0.18) 0%, transparent 70%);
+    filter: blur(20px);
+  }
+  .why-hero-card .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .why-hero-card .big {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 60px);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .why-hero-card .big .accent { color: var(--accent); }
+  .why-hero-card .desc {
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    margin-top: 16px;
+    max-width: 420px;
+  }
+  .why-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .why-item {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 28px;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 20px;
+    align-items: start;
+    transition: all .2s ease;
+  }
+  .why-item:hover {
+    border-color: var(--border-strong);
+    background: var(--bg-elev-2);
+  }
+  .why-item .check {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: grid;
+    place-items: center;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .why-item h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+  .why-item p {
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  @media (max-width: 900px) {
+    .why-grid { grid-template-columns: 1fr; }
+    .why-hero-card { padding: 36px 28px; }
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about {
+    background: var(--bg-elev);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .about-portrait {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius);
+    background:
+      radial-gradient(circle at 30% 30%, rgba(163,230,53,0.25) 0%, transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(59,130,246,0.18) 0%, transparent 55%),
+      linear-gradient(135deg, #0F1410 0%, #161A18 100%);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .about-portrait::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  }
+  .about-portrait .initials {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 88px;
+    color: var(--text);
+    letter-spacing: -0.04em;
+    z-index: 1;
+    text-shadow: 0 0 40px rgba(163,230,53,0.4);
+  }
+  .about-body h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .about-body p {
+    color: var(--text-dim);
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+  .about-body p strong { color: var(--text); font-weight: 500; }
+  .about-meta {
+    margin-top: 28px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-faint);
+  }
+  .about-meta span { display: flex; align-items: center; gap: 8px; }
+  .about-meta .pin {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+  }
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-portrait { max-width: 320px; margin: 0 auto; }
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list {
+    border-top: 1px solid var(--border);
+  }
+  details.faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+  }
+  details.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: color .15s ease;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary:hover { color: var(--accent); }
+  .faq-icon {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    display: grid;
+    place-items: center;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    transition: all .25s ease;
+    position: relative;
+  }
+  .faq-icon::before, .faq-icon::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform .25s ease;
+  }
+  .faq-icon::before { width: 10px; height: 1.5px; }
+  .faq-icon::after { width: 1.5px; height: 10px; }
+  details[open] .faq-icon { color: var(--accent); border-color: var(--accent); }
+  details[open] .faq-icon::after { transform: rotate(90deg); opacity: 0; }
+  details.faq-item .faq-answer {
+    padding: 0 0 28px;
+    color: var(--text-dim);
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 760px;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact {
+    padding: 140px 0;
+    position: relative;
+  }
+  .contact-card {
+    background: linear-gradient(180deg, var(--bg-elev) 0%, var(--bg-elev-2) 100%);
+    border: 1px solid var(--border-strong);
+    border-radius: 20px;
+    padding: 72px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(163,230,53,0.18) 0%, transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+  }
+  .contact-card > * { position: relative; z-index: 1; }
+  .contact-head { text-align: center; margin-bottom: 48px; }
+  .contact-card h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(34px, 5vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-card h2 .accent {
+    background: linear-gradient(180deg, var(--accent) 0%, #65A30D 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .contact-card p.sub {
+    color: var(--text-dim);
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Form */
+  .consult-form {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  .field.full { grid-column: span 2; }
+  .field label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+  }
+  .field label .req { color: var(--accent); margin-left: 2px; }
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.4;
+    transition: all .2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .field textarea { min-height: 120px; resize: vertical; font-family: inherit; }
+  .field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23A1A1AA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+  .field input::placeholder,
+  .field textarea::placeholder { color: var(--text-faint); }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(163,230,53,0.04);
+    box-shadow: 0 0 0 3px rgba(163,230,53,0.12);
+  }
+  .form-submit {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .form-submit .disclaimer {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-faint);
+  }
+  .form-status {
+    grid-column: span 2;
+    display: none;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .form-status.show { display: block; }
+  .form-status.success {
+    background: rgba(163,230,53,0.08);
+    border: 1px solid rgba(163,230,53,0.25);
+    color: var(--accent);
+  }
+  .form-status.error {
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.25);
+    color: #FCA5A5;
+  }
+  @media (max-width: 720px) {
+    .contact-card { padding: 48px 24px; }
+    .consult-form { grid-template-columns: 1fr; }
+    .field.full { grid-column: span 1; }
+    .form-submit { grid-column: span 1; }
+    .form-status { grid-column: span 1; }
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0;
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  .foot-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .foot-inner a { transition: color .2s ease; }
+  .foot-inner a:hover { color: var(--accent); }
+
+  /* ---------- UTILS ---------- */
+  ::selection { background: var(--accent); color: #0A0A0A; }
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">1</span>
+      <span>1PS Marketing</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Book a call <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Now booking Q2 — 2 client slots open</div>
+    <h1>
+      Turn scrolling into sales with <span class="accent">Meta &amp; Google Ads</span> that actually perform.
+    </h1>
+    <p class="lead">
+      1PS Marketing is a performance-first agency built for service businesses and ecommerce brands that need qualified leads — not vanity metrics, not lifestyle posts, not promises. Just media that pays for itself.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary btn-lg">Book a free consultation <span class="btn-arrow">→</span></a>
+      <a href="#services" class="btn btn-ghost btn-lg">See what we do</a>
+    </div>
+    <div class="hero-meta">
+      <span>Ontario, Canada</span>
+      <span class="sep"></span>
+      <span>Meta &amp; Google specialists</span>
+      <span class="sep"></span>
+      <span>Monthly, no contracts</span>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST -->
+<section class="trust" style="padding: 60px 0;">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-stat">
+        <div class="num"><span class="accent">20–40%</span></div>
+        <div class="label">Lower cost-per-lead</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num"><span class="accent">2–4x</span></div>
+        <div class="label">Qualified lead volume</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">~<span class="accent">90</span> days</div>
+        <div class="label">Typical timeline to results</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">Services</div>
+      <h2>Built for the only metric that matters: profitable acquisition.</h2>
+      <p>Every line item below is in service of one goal — making your ad spend predictable, profitable, and scalable. No bloat, no agency theater.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Big featured card -->
+      <div class="service span-4">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+        </div>
+        <h3>Meta &amp; Google Ads management</h3>
+        <p>End-to-end campaign building and management on the only two platforms that move the needle for most businesses. Account architecture, audience strategy, bidding, and daily optimization handled in-house.</p>
+        <div class="service-tags">
+          <span class="tag">Meta Ads</span>
+          <span class="tag">Google Ads</span>
+          <span class="tag">Account builds</span>
+          <span class="tag">Daily optimization</span>
+        </div>
+      </div>
+
+      <div class="service span-2">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Creative &amp; funnel buildout</h3>
+        <p>Ad creative and copy across top, middle, and bottom-of-funnel — designed to convert, not just look pretty.</p>
+      </div>
+
+      <div class="service span-2">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>Audience &amp; CPL systems</h3>
+        <p>Audience architecture engineered to drive cost-per-lead down and lead quality up.</p>
+      </div>
+
+      <div class="service span-3">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </div>
+        <h3>Live performance dashboards</h3>
+        <p>Always-on visibility into your spend, leads, and CPA. No hiding behind PDFs — you see what we see, when we see it.</p>
+      </div>
+
+      <div class="service span-3">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/></svg>
+        </div>
+        <h3>Weekly reporting &amp; landing page work</h3>
+        <p>Plain-English weekly insights, plus landing page optimization so the traffic we send actually converts when it lands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">How it works</div>
+      <h2>A clean four-step path from intro call to scale.</h2>
+      <p>No 12-week onboarding deck, no 40-person Slack channel. Just a tight loop of build, launch, learn, scale.</p>
+    </div>
+
+    <div class="process-list">
+      <div class="step">
+        <div class="step-num">STEP 01</div>
+        <div class="step-body">
+          <h3>Kickoff &amp; account audit</h3>
+          <p>We sit down with you, dig into your current ad accounts (if any), pixel setup, customer data, offers, and goals. By the end of week one we have a written game plan — what we're launching, what we're killing, and what we expect to learn first.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">STEP 02</div>
+        <div class="step-body">
+          <h3>Creative &amp; funnel buildout for Meta &amp; Google Ads</h3>
+          <p>We design and ship Meta and Google Ads creatives and copy across top, middle, and bottom-of-funnel. Landing pages, audiences, and tracking get tightened in parallel so the moment we go live, every dollar is accounted for.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">STEP 03</div>
+        <div class="step-body">
+          <h3>Launch &amp; learn</h3>
+          <p>Campaigns go live. We monitor daily, hunt down the winning creatives, audiences, and placements, and start cutting what isn't working — usually inside the first 30 days. You see everything in your live dashboard and a weekly recap.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">STEP 04</div>
+        <div class="step-body">
+          <h3>Scale Meta &amp; Google Ads with confidence</h3>
+          <p>We iterate weekly on winning Meta and Google Ads campaigns and creatives, prune underperformers, and push spend behind the angles working hardest. The goal: lower CPL, higher lead quality, compounding month over month.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY 1PS -->
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">Why 1PS</div>
+      <h2>Performance you can put on a P&amp;L — not on a slide deck.</h2>
+      <p>What you get when you work with us, in plain numbers and plain language.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-hero-card">
+        <div>
+          <div class="label">The benchmark</div>
+          <div class="big"><span class="accent">20–40%</span> lower cost-per-lead, <span class="accent">2–4x</span> qualified lead volume.</div>
+          <div class="desc">Our typical engagement target — usually achieved within 90 days of launch. Tied to your own historical CPL and your own definition of a qualified lead.</div>
+        </div>
+      </div>
+
+      <div class="why-list">
+        <div class="why-item">
+          <div class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h4>Specialists, not generalists</h4>
+            <p>We work on Meta and Google Ads only — every hour spent is on a platform we know cold.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h4>Daily optimization, not monthly</h4>
+            <p>Campaigns are touched every business day. Bad spend gets caught in 24 hours, not 30.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h4>Live dashboards, no hiding</h4>
+            <p>You see your spend, leads, and CPA in real time. We report on the same numbers you can already see.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h4>Monthly, no long-term contracts</h4>
+            <p>We earn the next month every month. No 6 or 12-month lock-ins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">FAQ</div>
+      <h2>Straight answers to the questions we get most.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What kinds of businesses do you work with? <span class="faq-icon"></span></summary>
+        <div class="faq-answer">Our main clients are service-based businesses and eCommerce brands that rely on a consistent supply of qualified leads.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What ad platforms do you manage? <span class="faq-icon"></span></summary>
+        <div class="faq-answer">We specialize exclusively in Meta (Facebook &amp; Instagram) and Google Ads.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What budget do I need to get value from 1PS? <span class="faq-icon"></span></summary>
+        <div class="faq-answer">The budget is mostly determined by your objectives, target market, and desired rate of growth.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How long does it take to see results? <span class="faq-icon"></span></summary>
+        <div class="faq-answer">It actually depends on your goals and the level of intensity with which you wish to scale.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is there a long-term contract? <span class="faq-icon"></span></summary>
+        <div class="faq-answer">There are no long-term obligations; everything is done on a monthly basis.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="contact-head">
+        <div class="section-label" style="color: var(--accent);">Book a free consultation</div>
+        <h2>Ready to <span class="accent">scale</span> your business?</h2>
+        <p class="sub">30 minutes, zero pressure. Tell me a bit about where you want to take your business and I'll come back within 1 business day with a solution.</p>
+      </div>
+
+      <form class="consult-form" id="consult-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms config: replace YOUR_ACCESS_KEY_HERE with key from web3forms.com -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New consultation request — 1PS Marketing">
+        <input type="hidden" name="from_name" value="1PS Marketing Website">
+        <input type="checkbox" name="botcheck" style="display:none;">
+
+        <div class="field">
+          <label for="name">Your name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+        </div>
+
+        <div class="field">
+          <label for="business">Business name <span class="req">*</span></label>
+          <input type="text" id="business" name="business" placeholder="Acme Co." required>
+        </div>
+
+        <div class="field full">
+          <label for="goals">Where do you want to take your business? <span class="req">*</span></label>
+          <textarea id="goals" name="goals" placeholder="What does the next level look like — more leads per month, breaking into a new market, doubling revenue? The more detail, the better." required></textarea>
+        </div>
+
+        <div class="form-status" id="form-status"></div>
+
+        <div class="form-submit">
+          <span class="disclaimer">No spam. No long-term contracts.</span>
+          <button type="submit" class="btn btn-primary btn-lg" id="form-btn">
+            Send request <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const form = document.getElementById('consult-form');
+    const status = document.getElementById('form-status');
+    const btn = document.getElementById('form-btn');
+    if (!form) return;
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      status.className = 'form-status';
+      status.textContent = '';
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Sending…';
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+        const json = await res.json().catch(() => ({}));
+        if (res.ok && json.success) {
+          form.reset();
+          status.classList.add('show', 'success');
+          status.textContent = 'Got it — your request is in. I\'ll be in touch within 1 business day.';
+        } else {
+          status.classList.add('show', 'error');
+          status.textContent = (json && json.message) ? json.message : 'Something went wrong. Please try again in a moment.';
+        }
+      } catch (err) {
+        status.classList.add('show', 'error');
+        status.textContent = 'Network error. Please try again.';
+      } finally {
+        btn.disabled = false;
+        btn.style.opacity = '';
+        btn.innerHTML = originalText;
+      }
+    });
+  })();
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <div>© 2026 1PS Marketing. All rights reserved.</div>
+    <div style="display:flex;gap:24px;align-items:center;">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="#contact">Book a consultation →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
