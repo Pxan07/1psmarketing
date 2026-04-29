@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>1PS Marketing — Terms &amp; Conditions</title>
+<meta name="description" content="Terms and Conditions for 1PS Marketing — service terms, SMS messaging consent, and use of our website." />
+<meta name="robots" content="index,follow" />
+
+<!-- Favicon: inline SVG (Performance Pillar logo on black tile) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='16' fill='%230A0A0A'/%3E%3Crect x='14' y='54' width='8' height='14' rx='1.5' fill='%23A3E635' opacity='0.35'/%3E%3Crect x='26' y='44' width='8' height='24' rx='1.5' fill='%23A3E635' opacity='0.55'/%3E%3Crect x='38' y='32' width='8' height='36' rx='1.5' fill='%23A3E635' opacity='0.8'/%3E%3Cpolygon points='48,20 54,14 54,22' fill='%23A3E635'/%3E%3Crect x='54' y='14' width='8' height='54' rx='1.5' fill='%23A3E635'/%3E%3C/svg%3E" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --bg-elev: #111111;
+    --bg-elev-2: #161616;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.14);
+    --text: #F5F5F4;
+    --text-dim: #A1A1AA;
+    --text-faint: #71717A;
+    --accent: #A3E635;
+    --accent-soft: rgba(163,230,53,0.12);
+    --radius: 14px;
+    --max: 820px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(163,230,53,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(40px);
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 28px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* NAV */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10,10,10,0.72);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+  }
+  .logo:hover { text-decoration: none; }
+  .logo-mark {
+    width: 30px;
+    height: 30px;
+    color: var(--accent);
+    filter: drop-shadow(0 0 10px rgba(163,230,53,0.4));
+    flex-shrink: 0;
+  }
+  .back {
+    font-size: 14px;
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .back:hover { color: var(--text); text-decoration: none; }
+
+  /* CONTENT */
+  .doc {
+    padding: 80px 0 120px;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+  .updated {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-faint);
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    margin: 48px 0 16px;
+    color: var(--text);
+  }
+  h2:first-of-type { margin-top: 0; }
+  p {
+    color: var(--text-dim);
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  ul {
+    color: var(--text-dim);
+    font-size: 16px;
+    margin: 0 0 18px 0;
+    padding-left: 22px;
+  }
+  ul li { margin-bottom: 10px; }
+  ul li::marker { color: var(--accent); }
+  strong { color: var(--text); font-weight: 500; }
+
+  .sms-box {
+    margin: 32px 0;
+    padding: 28px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(163,230,53,0.28);
+    border-radius: var(--radius);
+  }
+  .sms-box h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: var(--text);
+  }
+  .sms-box p { font-size: 15px; color: var(--text); }
+  .sms-box p:last-child { margin-bottom: 0; }
+  .sms-box code {
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(0,0,0,0.4);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .contact-box {
+    margin-top: 48px;
+    padding: 28px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .contact-box h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .contact-box p { margin-bottom: 0; font-size: 15px; }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0;
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  .foot-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .foot-inner a { color: var(--text-faint); }
+  .foot-inner a:hover { color: var(--accent); text-decoration: none; }
+
+  ::selection { background: var(--accent); color: #0A0A0A; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <svg class="logo-mark" viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="6"  y="56" width="12" height="16" rx="2" opacity="0.35"/>
+        <rect x="22" y="40" width="12" height="32" rx="2" opacity="0.55"/>
+        <rect x="38" y="24" width="12" height="48" rx="2" opacity="0.8"/>
+        <polygon points="48,12 54,4 54,14"/>
+        <rect x="54" y="4"  width="12" height="68" rx="2"/>
+      </svg>
+      <span>1PS Marketing</span>
+    </a>
+    <a href="/" class="back">← Back to home</a>
+  </div>
+</nav>
+
+<main class="doc">
+  <div class="wrap">
+    <div class="eyebrow">Legal</div>
+    <h1>Terms &amp; Conditions</h1>
+    <div class="updated">Last updated: April 28, 2026</div>
+
+    <p>
+      Welcome to 1PS Marketing. These Terms and Conditions (&ldquo;<strong>Terms</strong>&rdquo;) govern your use of the website <a href="https://1psmarketing.ca">1psmarketing.ca</a> and the services provided by 1PS Marketing (&ldquo;<strong>1PS</strong>,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). By accessing this website, submitting our consultation form, or otherwise engaging with our services, you (&ldquo;<strong>you</strong>&rdquo; or &ldquo;<strong>Client</strong>&rdquo;) agree to these Terms.
+    </p>
+    <p>
+      If you do not agree to these Terms, please do not use the website or our services.
+    </p>
+
+    <h2>1. About 1PS Marketing</h2>
+    <p>
+      1PS Marketing is a digital marketing agency based in Mississauga, Ontario, Canada, providing paid social media advertising services on Meta (Facebook &amp; Instagram), landing page builds, and lead-handling support — primarily for home renovation contractors and other local service businesses.
+    </p>
+
+    <h2>2. Use of the Website</h2>
+    <p>You may use this website for lawful purposes only. You agree not to:</p>
+    <ul>
+      <li>Use the website in any way that violates any applicable law or regulation.</li>
+      <li>Attempt to gain unauthorized access to any portion of the website or to any system or network connected to it.</li>
+      <li>Interfere with or disrupt the integrity or performance of the website.</li>
+      <li>Use any automated means (including bots, scrapers, or crawlers) to extract data from the website without our prior written consent.</li>
+    </ul>
+
+    <h2>3. Consultation Requests &amp; Communication Consent</h2>
+    <p>
+      When you submit our consultation form or otherwise share your contact information with us, you consent to be contacted by 1PS Marketing by phone call, SMS text message, and email regarding your inquiry, our services, scheduling, account management, and related business communications.
+    </p>
+    <p>
+      You may opt out of marketing communications at any time. Transactional communications (e.g., scheduling confirmations, billing notices, service-related updates) may continue as needed to provide the services you have requested.
+    </p>
+
+    <div class="sms-box">
+      <h3>📱 SMS Text Messaging Terms</h3>
+      <p>
+        By providing your mobile phone number to 1PS Marketing — through our website form, in writing, by phone, or otherwise — <strong>you expressly consent to receive SMS text messages</strong> from 1PS Marketing related to your inquiry, our services, appointment scheduling, account updates, and occasional promotional offers.
+      </p>
+      <p>
+        <strong>Message frequency varies.</strong> You will typically receive no more than a few messages per week, though frequency may be higher around active campaigns or scheduled meetings.
+      </p>
+      <p>
+        <strong>Message and data rates may apply.</strong> Standard carrier rates from your mobile provider may apply to each message sent or received.
+      </p>
+      <p>
+        <strong>To opt out:</strong> Reply <code>STOP</code> to any text message you receive from us at any time. After opting out, you will no longer receive SMS messages from us. You may continue to receive transactional or service-related communications by phone or email unless you also opt out of those.
+      </p>
+      <p>
+        <strong>For help:</strong> Reply <code>HELP</code> to any text message, or contact us at <a href="mailto:pranesh@1psmarketing.ca">pranesh@1psmarketing.ca</a>.
+      </p>
+      <p>
+        <strong>Carrier disclaimer:</strong> Mobile carriers are not liable for delayed or undelivered messages. SMS service may not be available on all mobile networks.
+      </p>
+      <p>
+        <strong>Privacy:</strong> We do not sell or share mobile information with third parties for marketing purposes. SMS opt-in data is never shared with third parties for marketing or promotional purposes. See our <a href="/privacy-policy">Privacy Policy</a> for full details on how we handle your information.
+      </p>
+    </div>
+
+    <h2>4. Services &amp; Service Agreements</h2>
+    <p>
+      Use of this website does not by itself create a service relationship between you and 1PS Marketing. Engagement of our paid services requires a separate written service agreement signed by both parties, which sets out the scope of work, fees, term, payment terms, and other commercial conditions. In the event of any conflict between these Terms and a signed service agreement, the signed service agreement controls with respect to the services it covers.
+    </p>
+
+    <h2>5. Performance &amp; Results</h2>
+    <p>
+      1PS Marketing provides advertising and marketing services intended to generate leads and inquiries for clients. While we apply industry best practices and deliver our services with reasonable skill and care, we do <strong>not</strong> guarantee specific results, lead volumes, sales outcomes, or revenue. Marketing performance depends on many factors outside our control, including market conditions, ad platform changes, the client's offer, the client's sales process, and the client's responsiveness to leads.
+    </p>
+
+    <h2>6. Client Responsibilities</h2>
+    <p>If you become a client, you agree to:</p>
+    <ul>
+      <li>Provide accurate information and timely access to ad accounts, business pages, media assets, and other materials reasonably required for us to perform the services.</li>
+      <li>Pay all fees and ad spend amounts on time and in accordance with your service agreement.</li>
+      <li>Be solely responsible for responding to leads, scheduling, sales conversations, pricing, fulfillment, and all business operations on your end.</li>
+      <li>Comply with all applicable laws, advertising platform policies, and industry regulations relevant to your business.</li>
+    </ul>
+
+    <h2>7. Intellectual Property</h2>
+    <p>
+      All content on this website — including text, graphics, logos, images, the &ldquo;1PS Marketing&rdquo; name and logo, and the underlying code — is owned by 1PS Marketing or its licensors and is protected by copyright and trademark laws. You may not reproduce, modify, distribute, or otherwise use our content without prior written permission, except for personal, non-commercial use.
+    </p>
+    <p>
+      With respect to deliverables produced under a signed service agreement (such as ad creatives or landing pages built specifically for a client), ownership and licensing terms are governed by that service agreement.
+    </p>
+
+    <h2>8. Third-Party Services</h2>
+    <p>
+      Our website and services rely on third-party platforms — including Meta (Facebook &amp; Instagram), Google, payment processors, hosting providers, and SMS/CRM platforms. Use of these platforms is subject to their own terms and policies. 1PS Marketing is not responsible for the availability, accuracy, or actions of any third-party service.
+    </p>
+
+    <h2>9. Disclaimers &amp; Warranties</h2>
+    <p>
+      The website and our content are provided on an &ldquo;<strong>as is</strong>&rdquo; and &ldquo;<strong>as available</strong>&rdquo; basis without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the website will be uninterrupted, error-free, secure, or free of viruses.
+    </p>
+
+    <h2>10. Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by law, 1PS Marketing shall not be liable for any indirect, incidental, special, consequential, or business losses — including lost revenue, lost profits, missed opportunities, or business interruption — arising out of or related to your use of the website or our services. In all cases, our total aggregate liability arising out of or related to these Terms shall not exceed the amount of fees actually paid by you to 1PS Marketing in the 30 days immediately preceding the event giving rise to the claim, or one hundred Canadian dollars (CA$100), whichever is greater.
+    </p>
+
+    <h2>11. Indemnification</h2>
+    <p>
+      You agree to indemnify and hold harmless 1PS Marketing, its owners, employees, and contractors from and against any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising out of or relating to your breach of these Terms, your misuse of the website, or your violation of any law or third-party right.
+    </p>
+
+    <h2>12. Termination</h2>
+    <p>
+      We may suspend or terminate your access to the website at any time, with or without notice, for conduct that we believe violates these Terms or is otherwise harmful. Termination of any service relationship is governed by your signed service agreement.
+    </p>
+
+    <h2>13. Governing Law</h2>
+    <p>
+      These Terms are governed by the laws of the Province of Ontario and the federal laws of Canada applicable therein, without regard to conflict-of-law principles. You agree to submit to the exclusive jurisdiction of the courts located in Ontario, Canada for the resolution of any dispute arising out of or relating to these Terms.
+    </p>
+
+    <h2>14. Changes to These Terms</h2>
+    <p>
+      We may update these Terms from time to time. When we do, we will update the &ldquo;Last updated&rdquo; date at the top of this page. Material changes will be communicated on our website. Your continued use of the website or our services after changes are posted constitutes acceptance of the updated Terms.
+    </p>
+
+    <h2>15. Privacy</h2>
+    <p>
+      Your use of the website and our services is also governed by our <a href="/privacy-policy">Privacy Policy</a>, which is incorporated into these Terms by reference.
+    </p>
+
+    <h2>16. Severability</h2>
+    <p>
+      If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect, and the invalid or unenforceable provision will be modified to the minimum extent necessary to make it valid and enforceable.
+    </p>
+
+    <h2>17. Entire Agreement</h2>
+    <p>
+      These Terms, together with our Privacy Policy and any signed service agreement between us, constitute the entire agreement between you and 1PS Marketing regarding the use of the website and our services, and supersede any prior agreements relating to those subjects.
+    </p>
+
+    <div class="contact-box">
+      <h3>Contact Us</h3>
+      <p>
+        Questions about these Terms? Reach out at <a href="mailto:pranesh@1psmarketing.ca">pranesh@1psmarketing.ca</a> or through the <a href="/#contact">contact form on our homepage</a> and we'll get back to you within 1 business day.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div>© 2026 1PS Marketing. All rights reserved.</div>
+    <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+      <a href="/#contact">Book a consultation →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
